@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@media screen and (max-width: 1200px) {
+  .header .nav-links a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .header .nav-links {
+    display: none;
+  }
+}
+.header #searchInput {
+  padding: 8px;
+  margin: 0 10px;
+  outline: none;
+  width: 240px;
+  background-color: rgb(250, 247, 240);
+}
+@media screen and (max-width: 1200px) {
+  .header #searchInput {
+    width: 170px;
+    padding: 6px;
+  }
+}
+.header #searchBtn,
+.header #randomBtn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: rgb(250, 247, 240);
+  border: none;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-family: "Nixie One", sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .header #searchBtn,
+  .header #randomBtn {
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+}
+
+main {
+  min-height: 100vh;
+}
+main .categories {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+main .categories .category {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 11px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  font-family: "Nixie One", sans-serif;
+  opacity: 1;
+}
+main .categories .category:hover {
+  border: 1px solid rgb(250, 247, 240);
+  transition: 0.6s;
+}
+main .categories .category.selected-category {
+  background-color: rgb(0, 0, 0);
+  color: rgb(250, 247, 240);
+}
+main .images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  padding: 0 1rem;
+  gap: 1rem;
+  overflow: hidden;
+}
+main .images-grid .card {
+  position: relative;
+  width: 100%;
+  background-color: rgb(250, 247, 240);
+}
+main .images-grid .card img {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 20px 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+@media screen and (min-width: 586px) {
+  main .pages {
+    margin-top: 100px;
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+  }
+  main .pages a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  main .pages a:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(250, 247, 240, 0.5);
+}
+
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-content img {
+  width: 85%;
+  height: 500px;
+  border: 1px solid rgb(250, 247, 240);
+}
+.modal-content #imageDetails {
+  width: 400px;
+  font-family: "Teko", sans-serif;
+  color: rgb(250, 247, 240);
+  padding: 1rem 0;
+}
+.modal-content #imageDetails h3 {
+  font-size: 25px;
+  padding: 2px;
+}
+.modal-content #imageDetails p {
+  font-size: 21px;
+  padding: 2px;
+}
+.modal-content #imageDetails button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 14px;
+  cursor: pointer;
+  background-color: rgb(250, 247, 240);
+  font-family: "Nixie One", sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+.close {
+  color: #adadad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  font-size: 40px;
+  height: 30px;
+  font-weight: bold;
+  position: relative;
+  left: 230px;
+  bottom: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+  .header {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .navbar {
+    padding: 10px 60px 10px 103px;
+    gap: 9rem;
+  }
+}
+@media screen and (max-width: 1499.75px) {
+  .navbar {
+    margin-left: 1.7rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    margin-right: 1rem;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .navbar {
+    gap: 6rem;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .navbar {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 1.4rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .navbar {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  main .images-grid {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 512px) {
+  main .images-grid {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .categories {
+    margin-top: 180px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .categories {
+    margin-top: 150px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .categories {
+    margin-top: 225px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .categories {
+    margin-top: 240px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .categories .category {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .categories .category {
+    font-size: 11px;
+    width: 100px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1022px) {
+  .categories .category {
+    width: 130px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .pages {
+    margin-top: 80px;
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+  }
+  .pages a {
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #333;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .pages a:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+/*# sourceMappingURL=imgs.css.map */

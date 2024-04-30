@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageInfinityHub</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/imgs.css" />
+    <link rel="stylesheet" href="./styles/collections.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script defer src="collections.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9cb0a7c4b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="top-header">
+      <p>Search high resolution and beautiful images</p>
+    </div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="main.html" class="logo"
+          ><img
+            src="./images/imageinfinityhub-high-resolution-logo-transparent.svg"
+            alt="logo"
+        /></a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="collections.html">My Collection</a>
+          <a href="liked-photos.html">Liked Photos</a>
+        </div>
+      </nav>
+    </header>
+    <main class="collections">
+      <h1>My Collections</h1>
+      <form id="newCollectionForm">
+        <label for="collectionTitle">New Collection Title:</label>
+        <input type="text" id="collectionTitle" required />
+        <label for="collectionDescription">Description:</label>
+        <input type="text" id="collectionDescription" />
+        <button type="submit">Create Collection</button>
+      </form>
+      <div class="my-collections"></div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <a href="index.html"
+          ><img
+            src="./images/imageinfinityhub-high-resolution-logo-transparent.svg"
+            alt="logo"
+        /></a>
+        <p>"Find Your Perfect Image: Search, Discover"</p>
+      </div>
+    </footer>
+    <div id="editCollection" class="modal">
+      <div class="edit-content">
+        <span class="close">&times;</span>
+        <h2>Edit Collection</h2>
+        <form id="editCollectionForm">
+          <label for="editCollectionTitle">Title:</label>
+          <input type="text" id="editCollectionTitle" required />
+          <label for="editCollectionDescription">Description:</label>
+          <input type="text" id="editCollectionDescription" />
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

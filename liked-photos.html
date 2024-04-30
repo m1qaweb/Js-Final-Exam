@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liked Photos</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/liked-photos.css" />
+    <link rel="stylesheet" href="./styles/imgs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script defer src="liked-photos.js"></script>
+  </head>
+  <body>
+    <div class="top-header">
+      <p>Search high resolution and beautiful images</p>
+    </div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="main.html" class="logo">
+          <img
+            src="./images/imageinfinityhub-high-resolution-logo-transparent.svg"
+            alt="logo"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="collections.html">My Collection</a>
+          <a href="liked-photos.html">Liked Photos</a>
+        </div>
+      </nav>
+    </header>
+    <main class="my-liked-photos">
+      <h1>Liked Photos</h1>
+      <div class="liked-photos" id="liked-photos-container"></div>
+    </main>
+    <footer>
+      <div class="footer">
+        <a href="index.html">
+          <img
+            src="./images/imageinfinityhub-high-resolution-logo-transparent.svg"
+            alt="logo"
+          />
+        </a>
+        <p>"Find Your Perfect Image: Search, Discover"</p>
+      </div>
+    </footer>
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image" />
+        <div id="imageDetails">
+          <button id="img-dwn" class="dwn-btn">Download</button>
+          <button id="like-button">Like</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

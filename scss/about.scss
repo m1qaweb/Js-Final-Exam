@@ -1,0 +1,30 @@
+@use "variables" as *;
+.mw-item {
+  .overlay-ab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 40px 50px 40px;
+
+    h1 {
+      color: $white;
+      font-size: 65px;
+      margin-bottom: 20px;
+      font-family: $primary-font;
+      font-weight: 700;
+      @media screen and (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+    p {
+      color: $white;
+      font-family: $primary-font;
+      font-size: 26px;
+      padding: 10px 10px 40px 10px;
+    }
+  }
+}

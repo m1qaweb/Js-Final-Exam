@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+.collections {
+  margin-top: 200px;
+}
+.collections h1 {
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  color: rgb(210, 43, 43);
+  font-size: 44px;
+  padding: 20px;
+  white-space: nowrap;
+}
+.collections form {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  white-space: nowrap;
+}
+.collections form label {
+  color: rgb(0, 0, 0);
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.collections form input {
+  outline: none;
+  background-color: rgb(250, 247, 240);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 3px;
+  border-radius: 2px;
+}
+.collections form button {
+  background-color: rgb(210, 43, 43);
+  color: rgb(250, 247, 240);
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  width: 100px;
+  cursor: pointer;
+  font-family: "Teko", sans-serif;
+  font-size: 17px;
+}
+@media screen and (min-width: 710px) {
+  .collections .my-collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: center;
+    padding: 40px;
+    gap: 3rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .collections .collection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    background-color: rgb(250, 247, 240);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    min-height: 600px;
+    box-shadow: 30px 40px 50px rgba(0, 0, 0, 0.1);
+    font-family: "Nixie One", sans-serif;
+    cursor: pointer;
+  }
+  .collections .collection h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(210, 43, 43);
+    text-align: center;
+    padding: 5px;
+  }
+  .collections .collection p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  .collections .collection img {
+    width: 100%;
+    height: 500px;
+    padding: 2px;
+    object-fit: cover;
+  }
+  .collections .collection button {
+    width: 70px;
+    background-color: rgb(250, 247, 240);
+    font-family: "Nixie One", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .my-collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 340px));
+    justify-content: center;
+    padding: 40px;
+    gap: 3rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .collection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    background-color: rgb(250, 247, 240);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    min-height: 500px;
+    box-shadow: 30px 40px 50px rgba(0, 0, 0, 0.1);
+    font-family: "Nixie One", sans-serif;
+    cursor: pointer;
+  }
+  .collection h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(210, 43, 43);
+    text-align: center;
+    padding: 5px;
+  }
+  .collection p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  .collection img {
+    width: 100%;
+    height: 500px;
+    padding: 2px;
+    object-fit: cover;
+  }
+  .collection button {
+    width: 70px;
+    background-color: rgb(250, 247, 240);
+    font-family: "Nixie One", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+  }
+}
+.edit-content {
+  background-color: rgb(250, 247, 240);
+  margin: 10% auto;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 270px;
+  height: 330px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.edit-content > span {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 40px;
+  height: 30px;
+  font-weight: bold;
+  position: relative;
+  left: 114px;
+  bottom: 5px;
+}
+.edit-content > span:hover, .edit-content > span:focus {
+  color: rgb(210, 43, 43);
+  text-decoration: none;
+  cursor: pointer;
+}
+.edit-content h2 {
+  font-size: 24px;
+  font-family: "Teko", sans-serif;
+  color: rgb(210, 43, 43);
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.edit-content form {
+  padding: 10px 0;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.edit-content form label {
+  padding: 10px 0;
+  color: rgb(0, 0, 0);
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.edit-content form input {
+  outline: none;
+  background-color: rgb(250, 247, 240);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2px;
+  border-radius: 2px;
+}
+.edit-content form button {
+  background-color: rgb(210, 43, 43);
+  color: rgb(250, 247, 240);
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  width: 100px;
+  cursor: pointer;
+  font-family: "Teko", sans-serif;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 710px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=collections.css.map */
