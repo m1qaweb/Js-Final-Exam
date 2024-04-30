@@ -123,70 +123,133 @@ main .images-grid .card img {
   background-color: rgba(250, 247, 240, 0.5);
 }
 
-.modal-content {
-  background-color: rgb(0, 0, 0);
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid rgb(0, 0, 0);
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@media screen and (min-width: 698px) {
+  .modal-content {
+    background-color: rgb(0, 0, 0);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modal-content img {
+    width: 85%;
+    height: 500px;
+    border: 1px solid rgb(250, 247, 240);
+  }
+  .modal-content #imageDetails {
+    width: 400px;
+    font-family: "Teko", sans-serif;
+    color: rgb(250, 247, 240);
+    padding: 1rem 0;
+  }
+  .modal-content #imageDetails h3 {
+    font-size: 25px;
+    padding: 2px;
+  }
+  .modal-content #imageDetails p {
+    font-size: 21px;
+    padding: 2px;
+  }
+  .modal-content #imageDetails button {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 14px;
+    cursor: pointer;
+    background-color: rgb(250, 247, 240);
+    font-family: "Nixie One", sans-serif;
+    color: black;
+    font-size: 14px;
+  }
+  .close {
+    color: #adadad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-size: 40px;
+    height: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 223px;
+    bottom: 10px;
+  }
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
-.modal-content img {
-  width: 85%;
-  height: 500px;
-  border: 1px solid rgb(250, 247, 240);
+@media screen and (max-width: 698px) {
+  .modal-content {
+    background-color: rgb(0, 0, 0);
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modal-content img {
+    width: 85%;
+    height: 290px;
+    border: 1px solid rgb(250, 247, 240);
+    object-fit: cover;
+  }
+  .modal-content #imageDetails {
+    width: 200px;
+    font-family: "Teko", sans-serif;
+    color: rgb(250, 247, 240);
+    padding: 1rem 0;
+  }
+  .modal-content #imageDetails h3 {
+    font-size: 20px;
+    padding: 2px;
+  }
+  .modal-content #imageDetails p {
+    font-size: 18px;
+    padding: 2px;
+  }
+  .modal-content #imageDetails button {
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    margin-top: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+    background-color: rgb(250, 247, 240);
+    font-family: "Nixie One", sans-serif;
+    color: black;
+    font-size: 12px;
+  }
+  .close {
+    color: #adadad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-size: 35px;
+    height: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 123px;
+    bottom: 5px;
+  }
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
-.modal-content #imageDetails {
-  width: 400px;
-  font-family: "Teko", sans-serif;
-  color: rgb(250, 247, 240);
-  padding: 1rem 0;
-}
-.modal-content #imageDetails h3 {
-  font-size: 25px;
-  padding: 2px;
-}
-.modal-content #imageDetails p {
-  font-size: 21px;
-  padding: 2px;
-}
-.modal-content #imageDetails button {
-  border: none;
-  border-radius: 3px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-right: 14px;
-  cursor: pointer;
-  background-color: rgb(250, 247, 240);
-  font-family: "Nixie One", sans-serif;
-  color: black;
-  font-size: 14px;
-}
-
-.close {
-  color: #adadad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: right;
-  font-size: 40px;
-  height: 30px;
-  font-weight: bold;
-  position: relative;
-  left: 230px;
-  bottom: 10px;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 530px) {
   .header {
     padding: 0;
