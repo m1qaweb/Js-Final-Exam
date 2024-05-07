@@ -129,72 +129,140 @@ main {
   overflow: auto;
   background-color: rgba(250, 247, 240, 0.5);
 }
+@media screen and (min-width: 698px) {
+  .modal-content {
+    background-color: $black;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid $black;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-.modal-content {
-  background-color: $black;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid $black;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    img {
+      width: 85%;
+      height: 500px;
+      border: 1px solid $beige;
+    }
 
-  img {
-    width: 85%;
-    height: 500px;
-    border: 1px solid $beige;
+    #imageDetails {
+      width: 400px;
+      font-family: $primary-font;
+      color: $beige;
+
+      padding: 1rem 0;
+      h3 {
+        font-size: 25px;
+        padding: 2px;
+      }
+      p {
+        font-size: 21px;
+        padding: 2px;
+      }
+      button {
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-right: 14px;
+        cursor: pointer;
+        background-color: $beige;
+        font-family: $main-font;
+        color: black;
+        font-size: 14px;
+      }
+    }
+  }
+  .close {
+    color: #adadad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-size: 40px;
+    height: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 223px;
+    bottom: 10px;
   }
 
-  #imageDetails {
-    width: 400px;
-    font-family: $primary-font;
-    color: $beige;
-
-    padding: 1rem 0;
-    h3 {
-      font-size: 25px;
-      padding: 2px;
-    }
-    p {
-      font-size: 21px;
-      padding: 2px;
-    }
-    button {
-      border: none;
-      border-radius: 3px;
-      padding: 5px;
-      margin-top: 10px;
-      margin-right: 14px;
-      cursor: pointer;
-      background-color: $beige;
-      font-family: $main-font;
-      color: black;
-      font-size: 14px;
-    }
+  .close:hover,
+  .close:focus {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
+@media screen and (max-width: 698px) {
+  .modal-content {
+    background-color: $black;
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid $black;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-.close {
-  color: #adadad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: right;
-  font-size: 40px;
-  height: 30px;
-  font-weight: bold;
-  position: relative;
-  left: 230px;
-  bottom: 10px;
-}
+    img {
+      width: 85%;
+      height: 290px;
+      border: 1px solid $beige;
+      object-fit: cover;
+    }
 
-.close:hover,
-.close:focus {
-  color: $white;
-  text-decoration: none;
-  cursor: pointer;
+    #imageDetails {
+      width: 200px;
+      font-family: $primary-font;
+      color: $beige;
+
+      padding: 1rem 0;
+      h3 {
+        font-size: 20px;
+        padding: 2px;
+      }
+      p {
+        font-size: 18px;
+        padding: 2px;
+      }
+      button {
+        border: none;
+        border-radius: 3px;
+        padding: 4px;
+        margin-top: 10px;
+        margin-right: 12px;
+        cursor: pointer;
+        background-color: $beige;
+        font-family: $main-font;
+        color: black;
+        font-size: 12px;
+      }
+    }
+  }
+  .close {
+    color: #adadad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-size: 35px;
+    height: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 123px;
+    bottom: 5px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 .header {
